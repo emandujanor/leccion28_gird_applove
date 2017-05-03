@@ -1,0 +1,223 @@
+/*
+ * Ingresa el CSS del proyecto en este archivo
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /* Establece la fuente de Google aquí */
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+
+/*mis estilos*/
+
+header {
+  position: fixed;  /*Hace que nuestro menu este fijo*/
+  background: white;
+  width: 100%;
+  top: 0;
+}
+
+.link {
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+}
+
+.logo {
+  float: right;  /* Hacemos que el logo lo posicione al lado derecho*/
+}
+
+.menu {
+  padding: 14px 70px;
+  overflow: auto;
+}
+
+#home {
+  background-image: url(../assets/images/bg-home.jpg);  /* Nuestra imagen de portada*/
+  background-position: center;  /*posicionar nuestra imagen al centro*/
+  background-repeat: no-repeat;  /*No repetirá nuestra imagen de fondo*/
+  background-size: cover;  /*Cubre todo el tamaño del contenedor*/
+  height: 554px;  /*Altura de nuestro home*/
+  text-align: center;  /*Aliniacion al centro*/
+  margin-top: 80px;  /* Darle un margen en la parte de arriba*/
+}
+
+#home .container {
+  color: white;  /*color blanco a los textos*/
+  padding: 70px;  /*Relleno de 70px en todos lados ( top, right, bottom y left*/
+}
+
+.text-home {
+  font-size: 53px;  /* tamaño de la tipografía*/
+}
+
+.btn-home {
+  background: #2ECC71;  /*color de fondo*/
+  color: #fff;  /* color del texto*/
+  padding: 11px 20px;  /*Relleno en el boton 11px (top- bottom) y 20px (left- right)*/
+  border-radius: 1px;  /* redondear el borde 1px;*/
+  font-weight: 500;
+  text-transform: uppercase;  /*convierte el texto a Mayusculas*/
+  margin-top: 63px;  /*margen en la parte de arriba :63px;*/
+  display: inline-block;  /**/
+  font-size: 14px;  /*Tamaño de letra:14px*/
+}
+
+#services {
+  background-color: #F17C72;  /*color de fondo*/
+  text-align: center;  /*alineacion al centro*/
+  color: #fff;  /*Color al texto: blanco*/
+  padding: 70px 7px;  /*relleno en el boton de 70px (top -bottom) y 7 px(left-right)*/
+  margin-top: 0px;
+}
+
+.box-services {
+  width: 30%;  /*Para que las cajas tengan un ancho de 30%*/
+  display: inline-block;
+  margin-top: 63px;  /* margen de la parte de arriba:63px*/
+}
+
+.txt-services {
+  font-size: 35px;  /*tamaño de la letra*/
+  letter-spacing: 2px;  /*espacio entre cada letra*/
+}
+#work {
+  background-color: white;  /*color de fondo*/
+  text-align: center;  /*alineacion al centro*/
+  color: #000;  /*Color al texto: blanco*/
+  padding: 70px 7px;  /*relleno en el boton de 70px (top -bottom) y 7 px(left-right)*/
+  margin-top: 0px;
+}
+
+.box-work {
+  width: 30%;  /*Para que las cajas tengan un ancho de 30%*/
+  display: inline-block;
+  margin-top: 63px;  /* margen de la parte de arriba:63px*/
+  text-align: center;
+}
+
+.txt-work {
+  font-size: 35px;  /*tamaño de la letra*/
+  letter-spacing: 2px;  /*espacio entre cada letra*/
+}
+
+h4{
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background: #373b47;
+  color: white;
+  padding-top: 7px;
+}
+/*estilos modal*/
+
+#work {
+  text-align: center;
+}
+
+
+
+    .img-p {
+        cursor: pointer;
+        transition: 0.3s;
+        width: 200px;
+    }
+
+    .img-p:hover {opacity: 0.7;}
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        padding: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgb(0, 0, 0, 0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin : auto;
+        display: block;
+        width: 60%;
+        max-width: 700px;
+        border: 15px solid white;
+    }
+
+    /* Add Animation */
+    .modal-content {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)}
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 100px;
+        right: 350px;
+        color: #0bc592;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+        }
+    }
